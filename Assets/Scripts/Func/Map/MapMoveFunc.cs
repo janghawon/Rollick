@@ -12,11 +12,11 @@ public class MapMoveFunc : MonoBehaviour
     public float _moveSpeed;
 
     private Transform _currentShowMap;
-    private bool _isSecond;
+    private int _mapIdx = 0;
 
     private void Start()
     {
-        _currentShowMap = _maps[Convert.ToInt32(_isSecond)];
+        _currentShowMap = _maps[_mapIdx];
     }
 
     private void Update()
@@ -28,8 +28,10 @@ public class MapMoveFunc : MonoBehaviour
         if(_currentShowMap.transform.position.x <= _limitPos)
         {
             _currentShowMap.transform.position += new Vector3(_mapLength * 2, 0, 0);
-            _isSecond = !_isSecond;
-            _currentShowMap = _maps[Convert.ToInt32(_isSecond)];
+            _mapIdx++;
+            if (_mapIdx == _maps.Length)
+                _mapIdx = 0;
+            _currentShowMap = _maps[_mapIdx];
         }
     }
 }
