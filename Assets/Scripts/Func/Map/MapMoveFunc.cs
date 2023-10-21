@@ -5,6 +5,8 @@ using System;
 
 public class MapMoveFunc : MonoBehaviour
 {
+    [SerializeField] private Transform _mapTrans;
+    [SerializeField] private Transform _cityLoadPrefab;
     [SerializeField] private Transform[] _maps = new Transform[2];
     [SerializeField] private float _limitPos;
     [SerializeField] private float _mapLength;
@@ -14,8 +16,23 @@ public class MapMoveFunc : MonoBehaviour
     private Transform _currentShowMap;
     private int _mapIdx = 0;
 
-    private void Start()
+    BuildingInstallFunc _buildingInstallFunc;
+
+    private void Awake()
     {
+        _buildingInstallFunc = GetComponent<BuildingInstallFunc>();
+        for(int i = 0; i < _maps.Length; i++)
+        {
+            _maps[i] = Instantiate(_cityLoadPrefab, _mapTrans);
+            _buildingInstallFunc.RandomBuild(_maps[i]);
+            if (i == 0)
+            {
+                _maps[i].position = Vector3.zero;
+                continue;
+            }
+            _maps[i].position = _maps[i-1].position + new Vector3(_mapLength, 0, 0);
+        }
+
         _currentShowMap = _maps[_mapIdx];
     }
 
@@ -28,6 +45,10 @@ public class MapMoveFunc : MonoBehaviour
         if(_currentShowMap.transform.position.x <= _limitPos)
         {
             _currentShowMap.transform.position += new Vector3(_mapLength * 2, 0, 0);
+
+            _buildingInstallFunc.ResetBuilding(_currentShowMap);
+            _buildingInstallFunc.RandomBuild(_currentShowMap);
+
             _mapIdx++;
             if (_mapIdx == _maps.Length)
                 _mapIdx = 0;
