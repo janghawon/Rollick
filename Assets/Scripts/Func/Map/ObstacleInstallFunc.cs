@@ -25,7 +25,6 @@ public class ObstacleInstallFunc : MonoBehaviour
             int set = i % 2 == 0 ? 1 : -1;
 
             obs.rotation = Quaternion.Euler(0, -90 * set, 0);
-            Debug.Log(_saveObstacle[i % 2]);
             obs.position += new Vector3(_saveObstacle[i % 2].x += idx, 0, 0);
             //obs.position = _saveObstacle[i % 2];
             obs.position += new Vector3(0, 0, 3 * set);// È¦¼ö = ¿À¸¥ÂÊ

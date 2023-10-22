@@ -78,6 +78,5 @@ public class BuildingInstallFunc : MonoBehaviour
             _buildings.RemoveAt(idx);
             CombineBuilding(parent, selectTrm);
         }
-
     }
 }
