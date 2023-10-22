@@ -344,6 +344,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1630964014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630964016}
+  - component: {fileID: 1630964015}
+  m_Layer: 0
+  m_Name: SetObstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1630964015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630964014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af9c1829f0c46a479d556ccdd3f4c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstaclesPrefab:
+  - {fileID: 4617064062793633852, guid: 4fb17a662f34aa34382040acf84c709e, type: 3}
+  - {fileID: 1914727046227331815, guid: fd60bef744b031f4fab990b5bf5a1347, type: 3}
+  - {fileID: 7796320954010935294, guid: a8dabe24965529c439e746355404bc52, type: 3}
+  - {fileID: 1745125623774658007, guid: 4b4adfd5a92c774458bedbd447eeddf9, type: 3}
+  - {fileID: 3724752855039761253, guid: 82c8e0fbda9dceb48b327067229dbc87, type: 3}
+  - {fileID: 1294725266334299110, guid: bb9ca4c070232b2478091e7e7b7ad9ea, type: 3}
+  - {fileID: 7135032127917191598, guid: c5e453875be65b941b40567cb06635c9, type: 3}
+  - {fileID: 8068134570365333467, guid: bc077806a97e92b42a7fc39c0b82c828, type: 3}
+  - {fileID: 3082627228482123372, guid: f5d36149bffa8024f98b70166ada45cd, type: 3}
+  - {fileID: 1036631050233009690, guid: 14f49e80f32b91545865808c82ee7d08, type: 3}
+  _minPaddingDistance: 37
+  _maxPaddingDistance: 52
+  _saveObstacle:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+--- !u!4 &1630964016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630964014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1704015169
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,14 +572,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mapTrans: {fileID: 1568406796}
-  _cityLoadPrefab: {fileID: 5645644865223040308, guid: 93d2af2f146efe54fa33e496d181fdc6,
+  _cityRoadPrefab: {fileID: 5645644865223040308, guid: 93d2af2f146efe54fa33e496d181fdc6,
     type: 3}
   _maps:
   - {fileID: 0}
   - {fileID: 0}
-  _limitPos: -260
+  - {fileID: 0}
+  _limitPos: -300
   _mapLength: 240
   _moveSpeed: 40
+  CreasteRoad:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1950746951}
+        m_TargetAssemblyTypeName: BuildingInstallFunc, Assembly-CSharp
+        m_MethodName: ResetBuilding
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1950746951}
+        m_TargetAssemblyTypeName: BuildingInstallFunc, Assembly-CSharp
+        m_MethodName: RandomBuild
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1630964015}
+        m_TargetAssemblyTypeName: ObstacleInstallFunc, Assembly-CSharp
+        m_MethodName: InstallObstacle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1950746950
 Transform:
   m_ObjectHideFlags: 0
