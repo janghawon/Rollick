@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1294725266334299110}
   - component: {fileID: 1294725266335101894}
   - component: {fileID: 1294725266336198918}
+  - component: {fileID: 9212338081080616094}
   m_Layer: 0
   m_Name: Vehicle_Pick up Truck_color01 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9212338081080616094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294725266334265286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1007783, y: 2.2749863, z: 5.9657435}
+  m_Center: {x: -0.00091147446, y: 1.132328, z: 0.13397208}

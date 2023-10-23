@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1036631050233009690}
   - component: {fileID: 1036631050235876922}
   - component: {fileID: 1036631050234778874}
+  - component: {fileID: 4005825500995756513}
   m_Layer: 0
   m_Name: Vehicle_SUV_color03 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4005825500995756513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036631050232580666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1007786, y: 2.2749152, z: 5.7322345}
+  m_Center: {x: -0.090745114, y: 1.1287856, z: 0.091878794}

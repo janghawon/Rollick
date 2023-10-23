@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8068134570365333467}
   - component: {fileID: 8068134570364039163}
   - component: {fileID: 8068134570363039035}
+  - component: {fileID: 263797007471230014}
   m_Layer: 0
   m_Name: Vehicle_Police Car
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &263797007471230014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8068134570365236219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9580626, y: 2.317875, z: 6.3205442}
+  m_Center: {x: 0.0017923121, y: 1.1553164, z: -0.19318275}
