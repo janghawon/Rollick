@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Normal.uss?fileID=7433441132597879392&amp;guid=c73d6103d1f9ce44c931a1dc36eeba48&amp;type=3#Normal" />
+    <Style src="project://database/Assets/UI/GameUI.uss?fileID=7433441132597879392&amp;guid=fcbae4b1b8ce480499343e83bd2199aa&amp;type=3#GameUI" />
+    <ui:VisualElement name="container" style="position: absolute; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%; height: 100%;">
+        <ui:Label text="Score" display-tooltip-when-elided="true" name="score-txt" style="font-size: 80px; color: rgb(255, 255, 255); -unity-font: url(&apos;project://database/Assets/Font/ONE%20Mobile%20Regular/ONE%20Mobile%20Bold.ttf?fileID=12800000&amp;guid=622b260362af91f4b8ee6c297cf67d53&amp;type=3#ONE Mobile Bold&apos;); -unity-font-definition: initial; margin-left: 40px; margin-right: 40px; margin-top: 80px; margin-bottom: 40px; -unity-font-style: bold;" />
+        <ui:Button display-tooltip-when-elided="true" name="stop-btn" style="width: 140px; height: 140px; margin-left: 60px; margin-right: 60px; margin-top: 60px; margin-bottom: 60px; background-image: url(&apos;project://database/Assets/FreeButtonSet/Textures/buttons/button_round_130.png?fileID=21300000&amp;guid=0dcdf5b7debd4ba4492217e4975c965e&amp;type=3#button_round_130&apos;); background-color: rgba(88, 88, 88, 0);" />
+    </ui:VisualElement>
+</ui:UXML>
