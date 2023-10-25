@@ -226,6 +226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1369537830, guid: 0300080954492454da4061741e867270, type: 3}
+      propertyPath: cis
+      value: 
+      objectReference: {fileID: 836013282}
     - target: {fileID: 1369537832, guid: 0300080954492454da4061741e867270, type: 3}
       propertyPath: m_Size.x
       value: 0.6658646
@@ -315,6 +319,7 @@ GameObject:
   - component: {fileID: 836013281}
   - component: {fileID: 836013280}
   - component: {fileID: 836013282}
+  - component: {fileID: 836013283}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -429,6 +434,18 @@ MonoBehaviour:
     m_DissipationDistance: 100
     m_PropagationSpeed: 343
   m_DefaultVelocity: {x: 0.1, y: 0.1, z: 0.1}
+--- !u!114 &836013283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836013279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930aefc9cd44a1e4c9a9e677dabd0162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1369537836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7389316750714424175, guid: 0300080954492454da4061741e867270,

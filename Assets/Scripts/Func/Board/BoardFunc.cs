@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class BoardFunc : MonoBehaviour
 {
     private Camera _mainCam;
     [SerializeField] private LayerMask _roadMask;
+    [SerializeField] private CinemachineImpulseSource cis;
     private Vector3 dir;
 
     private bool _isRoll = false;
@@ -35,7 +37,8 @@ public class BoardFunc : MonoBehaviour
     private void Rollick()
     {
         if (dir.z == 0) return;
-
+        Debug.Log(dir.z);
+        cis.GenerateImpulse();
         _isRoll = true;
     }
 
