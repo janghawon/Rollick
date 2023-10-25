@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class BoardFunc : MonoBehaviour
 {
     private Camera _mainCam;
     [SerializeField] private LayerMask _roadMask;
-    private float _dotProduct;
+    private Vector3 dir;
 
     private bool _isRoll = false;
 
@@ -28,33 +27,16 @@ public class BoardFunc : MonoBehaviour
             {
                 pos = transform.position;
             }
-            Vector3 dir = (pos - transform.position).normalized;
-            _dotProduct = Vector3.Dot(dir, Vector3.right);
+            dir = (pos - transform.position).normalized;
             transform.position = pos;
         }
     }
 
     private void Rollick()
     {
-        if (_isRoll) return;
-        Debug.Log(1);
+        if (dir.z == 0) return;
+
         _isRoll = true;
-        Sequence seq = DOTween.Sequence();
-        if(_dotProduct > 0)
-        {
-            //¿À¸¥ÂÊ
-            seq.Append(transform.DORotateQuaternion(Quaternion.Euler(0, -90, 359), 0.5f));
-        }
-        else if(_dotProduct < 0)
-        {
-            //¿ÞÂÊ
-            seq.Append(transform.DORotateQuaternion(Quaternion.Euler(0, -90, -359), 0.5f));
-        }
-        seq.AppendCallback(() =>
-        {
-            transform.rotation = Quaternion.Euler(0, -90, 0);
-            _isRoll = false;
-        });
     }
 
     private void Update()
@@ -62,11 +44,19 @@ public class BoardFunc : MonoBehaviour
         MoveSkateBoard();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Obstacle"))
+        if (other.CompareTag("Obstacle") && !_isRoll)
         {
             Rollick();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Obstacle") && _isRoll)
+        {
+            _isRoll = false;
         }
     }
 }
