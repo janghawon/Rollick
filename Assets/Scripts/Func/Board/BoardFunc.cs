@@ -11,10 +11,16 @@ public class BoardFunc : MonoBehaviour
     private Vector3 dir;
 
     private bool _isRoll = false;
+    public bool isHit = false;
 
     private void Awake()
     {
         _mainCam = Camera.main;
+    }
+
+    private void Start()
+    {
+        cis.m_DefaultVelocity = Vector3.one * 0.1f;
     }
 
     private void MoveSkateBoard()
@@ -36,9 +42,10 @@ public class BoardFunc : MonoBehaviour
 
     private void Rollick()
     {
+        isHit = true;
         if (dir.z == 0) return;
-        Debug.Log(dir.z);
         cis.GenerateImpulse();
+        ScoreManager.Instance.AddScore(5000);
         _isRoll = true;
     }
 
@@ -60,6 +67,7 @@ public class BoardFunc : MonoBehaviour
         if (other.CompareTag("Obstacle") && _isRoll)
         {
             _isRoll = false;
+            isHit = false;
         }
     }
 }
