@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Events;
 
 public class BoardHitFunc : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class BoardHitFunc : MonoBehaviour
     [SerializeField] private Rigidbody _rigid;
     [SerializeField] private Transform _cameraTrm;
     [SerializeField] private CinemachineImpulseSource cis;
+    [SerializeField] private UnityEvent _endEvent;
 
     [Header("°ª")]
     [SerializeField] private float _forceValue;
@@ -25,6 +27,8 @@ public class BoardHitFunc : MonoBehaviour
 
             _rigid.angularVelocity = Random.insideUnitCircle * _forceValue;
             _rigid.AddForce(dir * _forceValue, ForceMode.Impulse);
+
+            _endEvent?.Invoke();
         }
     }
 }
