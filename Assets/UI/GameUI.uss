@@ -1,26 +1,24 @@
 .score-txt {
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(255, 255, 255);
     -unity-font: url('project://database/Assets/Font/ONE%20Mobile%20Regular/ONE%20Mobile%20Bold.ttf?fileID=12800000&guid=622b260362af91f4b8ee6c297cf67d53&type=3#ONE Mobile Bold');
     -unity-font-definition: initial;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 80px;
-    margin-bottom: 40px;
     -unity-font-style: bold;
     border-left-width: 1px;
     border-right-width: 1px;
     border-top-width: 1px;
     border-bottom-width: 1px;
+    -unity-text-align: middle-left;
+    margin-top: 10px;
 }
 
 .stop-btn {
     width: 140px;
     height: 140px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-image: url('project://database/Assets/FreeButtonSet/Textures/buttons/button_round_130.png?fileID=21300000&guid=0dcdf5b7debd4ba4492217e4975c965e&type=3#button_round_130');
     background-color: rgba(88, 88, 88, 0);
     border-left-width: 0;
@@ -35,14 +33,11 @@
     width: 70%;
     height: 70%;
     margin-bottom: 20px;
-    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
     transition-duration: 0.2s;
 }
 
 .stop-btn:hover {
-    -unity-background-image-tint-color: rgba(217, 217, 217, 255);
-}
-
-.pause:hover {
-    -unity-background-image-tint-color: rgba(217, 217, 217, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-image: url('project://database/Assets/2D%20Casual%20UI/Sprite/GUI.png?fileID=21300016&guid=1eaee135ce037439d925cee5e41ce026&type=3#GUI_8');
 }

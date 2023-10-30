@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
     private int _score;
+    private int _bestScore;
     [SerializeField] private Canvas _can;
     [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private List<Sprite> _emoziList = new List<Sprite>();
@@ -30,6 +31,12 @@ public class ScoreManager : MonoBehaviour
     {
         _score += value;
         UIManager.Instance.SetScore(_score);
+    }
+
+    public void GeneradeScore()
+    {
+        if(_score > PlayerPrefs.GetInt("bestScore"))
+            PlayerPrefs.SetInt("bestScore", _score);
     }
 
     public void LookToAddScore(int value, Vector3 pos)
