@@ -15,11 +15,13 @@ public class BoardHitFunc : MonoBehaviour
 
     [Header("°ª")]
     [SerializeField] private float _forceValue;
+    public bool isDie;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Obstacle") && _boardFunc.isHit)
         {
+            isDie = true;
             Vector3 dir = (_cameraTrm.position - _boardFunc.transform.position).normalized;
 
             cis.m_DefaultVelocity = new Vector3(0.5f, 0.5f, 0.5f);

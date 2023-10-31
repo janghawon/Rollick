@@ -10,6 +10,7 @@ public class BoardFunc : MonoBehaviour
     [SerializeField] private CinemachineImpulseSource cis;
     [SerializeField] private float _limitZ;
     private Vector3 dir;
+    private BoardHitFunc _boardHitFunc;
 
     private bool _isRoll = false;
     public bool isHit = false;
@@ -17,6 +18,7 @@ public class BoardFunc : MonoBehaviour
     private void Awake()
     {
         _mainCam = Camera.main;
+        _boardHitFunc = transform.Find("hitRange").GetComponent<BoardHitFunc>();
     }
 
     private void Start()
@@ -44,7 +46,7 @@ public class BoardFunc : MonoBehaviour
     private void Rollick(Vector3 pos)
     {
         isHit = true;
-        if (dir.z == 0) return;
+        if (dir.z == 0 || _boardHitFunc.isDie) return;
         cis.GenerateImpulse();
         ScoreManager.Instance.AddScore(5000);
         ScoreManager.Instance.LookToAddScore(5000, pos);

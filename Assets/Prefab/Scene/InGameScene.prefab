@@ -1,0 +1,318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4800589818205062487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574404535120138776}
+  m_Layer: 0
+  m_Name: InGameScene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574404535120138776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800589818205062487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7839952049727806307}
+  - {fileID: 7839952049342181161}
+  - {fileID: 7839952049414314773}
+  - {fileID: 7839952048727478504}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7839952048727478510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7839952048727478504}
+  - component: {fileID: 7839952048727478505}
+  - component: {fileID: 7839952048727478507}
+  m_Layer: 0
+  m_Name: UITOOLKIT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7839952048727478504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952048727478510}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 574404535120138776}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7839952048727478505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952048727478510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: a22cc8a70bee7e84ba5c698f5e7f1e66, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 0dfa1721f55a27a479cceedb70db1866,
+    type: 3}
+  m_SortingOrder: 0
+--- !u!114 &7839952048727478507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952048727478510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ff770fdd5d0c845b9b65d90e4b0154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7839952049342181166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7839952049342181161}
+  m_Layer: 0
+  m_Name: MapTrans
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7839952049342181161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049342181166}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 574404535120138776}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7839952049414314763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7839952049414314773}
+  - component: {fileID: 7839952049414314762}
+  m_Layer: 0
+  m_Name: SetObstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7839952049414314773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049414314763}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 574404535120138776}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7839952049414314762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049414314763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af9c1829f0c46a479d556ccdd3f4c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _obstaclesPrefab:
+  - {fileID: 4617064062793633852, guid: 4fb17a662f34aa34382040acf84c709e, type: 3}
+  - {fileID: 1914727046227331815, guid: fd60bef744b031f4fab990b5bf5a1347, type: 3}
+  - {fileID: 7796320954010935294, guid: a8dabe24965529c439e746355404bc52, type: 3}
+  - {fileID: 1745125623774658007, guid: 4b4adfd5a92c774458bedbd447eeddf9, type: 3}
+  - {fileID: 3724752855039761253, guid: 82c8e0fbda9dceb48b327067229dbc87, type: 3}
+  - {fileID: 1294725266334299110, guid: bb9ca4c070232b2478091e7e7b7ad9ea, type: 3}
+  - {fileID: 7135032127917191598, guid: c5e453875be65b941b40567cb06635c9, type: 3}
+  - {fileID: 8068134570365333467, guid: bc077806a97e92b42a7fc39c0b82c828, type: 3}
+  - {fileID: 3082627228482123372, guid: f5d36149bffa8024f98b70166ada45cd, type: 3}
+  - {fileID: 1036631050233009690, guid: 14f49e80f32b91545865808c82ee7d08, type: 3}
+  _minPaddingDistance: 37
+  _maxPaddingDistance: 52
+  _saveObstacle:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+--- !u!1 &7839952049727806305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7839952049727806307}
+  - component: {fileID: 7839952049727806304}
+  - component: {fileID: 7839952049727806306}
+  m_Layer: 0
+  m_Name: MapMoveSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7839952049727806307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049727806305}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 574404535120138776}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7839952049727806304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049727806305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29024b76a2866a47bd82d43d3b8834c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mapTrans: {fileID: 7839952049342181161}
+  _cityRoadPrefab: {fileID: 5645644865223040308, guid: 93d2af2f146efe54fa33e496d181fdc6,
+    type: 3}
+  _maps:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _limitPos: -300
+  _mapLength: 240
+  _moveSpeed: 20
+  CreasteRoad:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7839952049727806306}
+        m_TargetAssemblyTypeName: BuildingInstallFunc, Assembly-CSharp
+        m_MethodName: ResetBuilding
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7839952049727806306}
+        m_TargetAssemblyTypeName: BuildingInstallFunc, Assembly-CSharp
+        m_MethodName: RandomBuild
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7839952049414314762}
+        m_TargetAssemblyTypeName: ObstacleInstallFunc, Assembly-CSharp
+        m_MethodName: InstallObstacle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7839952049727806306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839952049727806305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8922f4316dcc64c87390059df64cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingList:
+  - building: {fileID: 2355224455212118768, guid: 7f976ec98f648614786964ae8ab489bc,
+      type: 3}
+    nextBuildingPosIdx: 55
+  - building: {fileID: 884636571755492502, guid: 5c580b57598cf814496d0d1caec25d61,
+      type: 3}
+    nextBuildingPosIdx: 65
+  - building: {fileID: 396785077469508181, guid: fa86408a9c3122c41994ce5d6febd2c0,
+      type: 3}
+    nextBuildingPosIdx: 63
+  - building: {fileID: 648013846207746544, guid: 6b335a85cc90a3644b602ba5e5c7a060,
+      type: 3}
+    nextBuildingPosIdx: 68
+  - building: {fileID: 2185184794732387738, guid: fe4ad8bd4e57f0344a5034d6915c00ff,
+      type: 3}
+    nextBuildingPosIdx: 53
+  - building: {fileID: 2902365985435774376, guid: 3e0b1dfbae091de4b833aaf3f6891408,
+      type: 3}
+    nextBuildingPosIdx: 61
+  - building: {fileID: 4735391227018429509, guid: cfea586365af449488f2471d6d6e0003,
+      type: 3}
+    nextBuildingPosIdx: 55
